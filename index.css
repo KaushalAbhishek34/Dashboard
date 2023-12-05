@@ -1,0 +1,23 @@
+#offcanvasExample{
+    width: 200px;
+    margin-top: 56px;
+}
+@media (min-width:992px){
+    main{
+        margin-left:200px;
+
+    }
+    body{
+        overflow: auto !important;
+    }
+    .offcanvas-backdrop::before{
+        display:none;
+    }
+
+    #offcanvasExample{
+        transform: none;
+        visibility: visible !important;
+
+    }
+}
+
