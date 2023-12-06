@@ -1,23 +1,20 @@
+
+
 #offcanvasExample{
     width: 200px;
     margin-top: 56px;
 }
-@media (min-width:992px){
-    main{
-        margin-left:200px;
 
-    }
-    body{
-        overflow: auto !important;
-    }
-    .offcanvas-backdrop::before{
-        display:none;
-    }
+    
 
-    #offcanvasExample{
-        transform: none;
-        visibility: visible !important;
-
-    }
+body{
+    overflow-x: hidden;;
 }
+main{
+    transition: margin-left 0.5s; 
+}
+main.shifted{
+    margin-left: 200px;
+}
+
 
