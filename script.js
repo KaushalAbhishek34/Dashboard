@@ -2,3 +2,4 @@
       $('main').toggleClass('shifted');
     }
     new DataTable('#example');
+    

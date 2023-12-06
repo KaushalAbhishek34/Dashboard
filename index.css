@@ -20,6 +20,14 @@
 
 }
 
+#canvas-heading{
+    color:rgb(91, 91, 91);
+    font-size: smaller;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
     
 
 body{
