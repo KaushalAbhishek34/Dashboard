@@ -1,8 +1,8 @@
 var data = {
-    labels: ['Mar 1', 'Mar 3', 'Mar 5', 'Mar 7','Mar 9', 'Mar 11','Mar 13'],
+    labels: ['Mar 1', 'Mar 2', 'Mar 3', 'Mar 4', 'Mar 5','Mar 6', 'Mar 7', 'Mar 8','Mar 9', 'Mar 10', 'Mar 11', 'Mar 12','Mar 13'],
     datasets: [{
-      label: 'Monthly Sales',
-      data: [10000, 29000, 18000, 31500, 25000, 32000,38500],
+      label: 'Sessions',
+      data: [10000, 30162, 26263, 18394, 18287,28682, 31274,33259,25849,24159,32651,31984,38451],
       borderColor: 'rgb(11, 169, 231)', 
       backgroundColor: 'rgb(190, 223, 234)', 
       borderWidth: 2.5,
@@ -21,6 +21,9 @@ var data = {
         labels: data.labels,
         grid: {
             display:false,
+        },
+        ticks: {
+            maxTicksLimit:7
         }
       },
       y: {

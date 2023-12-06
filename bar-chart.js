@@ -1,8 +1,8 @@
 var data = {
     labels: ['January', 'February', 'March', 'April','May', 'June'],
     datasets: [{
-      label: 'Monthly Sales',
-      data: [4500, 5300, 6000, 7500, 9600, 15000],
+      label: 'Revenue',
+      data: [4215, 5312, 6251, 7841, 9821, 14984],
       borderColor: 'rgb(26, 97, 230)', 
       backgroundColor: 'rgb(26, 97, 230)', 
       borderWidth: 2.5,
