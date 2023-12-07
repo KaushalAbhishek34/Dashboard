@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand  navbar-dark bg-dark fixed-top" >
       <div class="container-fluid">
         <a class="navbar-brand ps-3 " href="#">Start Bootstrap</a>
-        <button class="btn btn-dark  order-lg-0 me-4 me-lg-0" id="toggleSidebar"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" onclick="toggleMainContent()">
+        <button class="btn btn-dark  "id="sidebarToggle"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" onclick="toggleMainContent()" >
           <span><i class="bi bi-menu-button-wide"></i></span>
         </button>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -771,14 +771,50 @@
       </div>
       <br>
       <footer>
-        <div class="col-lg-12 col-md-12 col-12 d-flex justify-content-between">
-          <div class="text-">Copyright © Your Website 2023</div>
-          <div><span><a href="#">Privacy Policy</a></span>
-            <span>.</span>
-          <span><a href="#">Terms&Conditions</a></span>
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted"  >
+          <!-- Section: Social media -->
+          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+              <span>Get connected with social networks:</span>
+            </div>
+            <!-- Left -->
+        
+            <!-- Right -->
+            <div>
+              <a href="" class="me-4 text-reset">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="bi bi-google"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <!-- Right -->
+          </section>
+        
+          <div class="d-flex justify-content-between" style="background-color: rgba(0, 0, 0, 0.05);">
+            <div class="text-center p-4" id="footer-text">
+              © 2023 Copyright:Bootsrap Example
+            </div>
+            <div class="p-4">
+              <a href="">Privacy Policy</a>
+              <span style="font-weight: bolder;">.</span>
+              <a href="">Terms & conditions</a>
+            </div>
           </div>
-  
-        </div>
+        </footer>
       </footer>
       
     </div>

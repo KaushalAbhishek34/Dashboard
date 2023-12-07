@@ -19,7 +19,7 @@
         transition: margin-left 0.3s; 
     }
     #main.shifted{
-        margin-left: 240px;
+        margin-left: none;
     }
 
 }
@@ -56,7 +56,13 @@ main.shifted{
     
 }
 .sidebar-link[aria-expanded="true"].right-icon{
-    transform: rotate(180deg);
+    transform: rotate(rotate 180 degree );
     transition: 0.1s;
+}
+#footer-text{
+    color: darkgrey;
+    font-weight:bold ;
+    font-size: medium;
+
 }
 
