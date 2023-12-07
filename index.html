@@ -54,9 +54,8 @@
   </navbar>
   <offcanavas> 
     <div class="offcanvas offcanvas-start   bg-dark text-white " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel " >
-      <div class="offcanvas-header pd-0">
+      <div class="offcanvas-header pd-0  ">
         <nav class="navbar-dark">
-          <br>
           <ul class="navbar-nav">
             <li>
               <div class="sb-sidenav-menu-heading" id="canvas-heading">
@@ -71,8 +70,8 @@
                 
               </a>
             </li>
-            <li class="my-4">
-              <hr class="dropdown-divider">
+            <li class="my-2">
+              <br class="dropdown-divider"/>
             </li>
             <li>
               <div class="small  text-uppercase " id="canvas-heading">
@@ -80,10 +79,10 @@
               </div>
             </li>
             <li>
-              <a class="nav-link px-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample">
+              <a class="nav-link px-2 sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <span><i class="bi bi-layout-sidebar-inset"></i></span>
                 <span class="me-2">Layouts</span>
-                <span><i class="bi bi-chevron-down"></i></span>
+                <span class="right-icon ms-auto"><i class="bi bi-chevron-down"></i></span>
               </a>
               <div class="collapse" id="collapseExample">
                 <div >
@@ -104,18 +103,18 @@
               </div>
             </li>
             <li>
-              <a class="nav-link px-2" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="true" aria-controls="collapseExample">
+              <a class="nav-link px-2 sidebar-link" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <span><i class="bi bi-book"></i></span>
                 <span>Pages</span>
-                <span><i class="bi bi-chevron-down"></i></span>
+                <span class="right-icon ms-auto"><i class="bi bi-chevron-down"></i></span>
               </a>
               <div class="collapse" id="collapseExample1">
                 <div >
                   <ul class="navbar-nav ps-3">
                     <li>
-                      <a class="nav-link px-2" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true" aria-controls="collapseExample">
+                      <a class="nav-link px-2 sidebar-link" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
                         <span>Authentication</span>
-                        <span><i class="bi bi-chevron-down"></i></span>
+                        <span class="right-icon ms-auto"><i class="bi bi-chevron-down"></i></span>
                       </a>
                       <div class="collapse" id="collapseExample2">
                         <div >
@@ -141,9 +140,9 @@
                       </div>
                     </li> 
                     <li>
-                      <a class="nav-link px-2" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="true" aria-controls="collapseExample">
+                      <a class="nav-link px-2 sidebar-link" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
                         <span>Error</span>
-                        <span><i class="bi bi-chevron-down"></i></span>
+                        <span class="right-icon ms-auto" ><i class="bi bi-chevron-down"></i></span>
                       </a>
                       <div class="collapse" id="collapseExample3">
                         <div >
@@ -171,8 +170,8 @@
                 </div>
               </div>
             </li>
-            <li class="my-4">
-              <hr class="dropdown-divider">
+            <li class="my-2">
+              <br class="dropdown-divider">
             </li>
             <li>
               <div class="small  text-uppercase " id="canvas-heading">
@@ -196,8 +195,11 @@
           </ul>
         </nav>
       </div>
+      <div class="offcanvas-footer">
+        <div class="small">Logged in as :</div>
+         Start Bootstrap
+      </div>
     </div>
-    <div>
   </offcanavas>
   <main >
     <div id="main">
