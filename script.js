@@ -9,10 +9,10 @@ $(document).ready(function () {
   }
 
   // Toggle sidebar on button click
-  $('#sidebarToggle').click(function () {
-    $('.sidebar').toggleClass('show');
-    toggleMainContent(); // Apply the main content toggle function
-  });
+  // $('#sidebarToggle').click(function () {
+  //   $('.sidebar').toggleClass('show');
+  //   toggleMainContent(); // Apply the main content toggle function
+  // });
 });
 
 
