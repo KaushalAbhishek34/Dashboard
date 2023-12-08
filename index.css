@@ -4,9 +4,9 @@
     width: 240px;
     margin-top: 56px;
     overflow-x: hidden;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 @media (max-width:992px) {
     #toggleSidebar{
@@ -15,13 +15,9 @@
     #offcanvasExample{
         display: none;
     }
-    #main{
-        transition: margin-left 0.3s; 
+    #sidebarToggle{
+        display: none;
     }
-    #main.shifted{
-        margin-left: none;
-    }
-
 }
 
 #canvas-heading{

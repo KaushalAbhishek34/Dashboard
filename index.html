@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand  navbar-dark bg-dark fixed-top" >
       <div class="container-fluid">
         <a class="navbar-brand ps-3 " href="#">Start Bootstrap</a>
-        <button class="btn btn-dark  "id="sidebarToggle"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" onclick="toggleMainContent()" >
+        <button class="btn btn-dark  "id="toggle-btn"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"  >
           <span><i class="bi bi-menu-button-wide"></i></span>
         </button>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +53,7 @@
 
   </navbar>
   <offcanavas> 
-    <div class="offcanvas offcanvas-start   bg-dark text-white " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel " >
+    <div class="offcanvas offcanvas-start   bg-dark text-white d-flex justify-content-between" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="sidebar" aria-labelledby="offcanvasExampleLabel " >
       <div class="offcanvas-header pd-0  ">
         <nav class="navbar-dark">
           <ul class="navbar-nav">
@@ -799,7 +799,7 @@
             </div>
           </section>
         
-          <div class="d-flex justify-content-between" style="background-color: rgba(0, 0, 0, 0.05);">
+          <div class="d-flex justify-content-between" id="footer" style="background-color: rgba(0, 0, 0, 0.05);">
             <div class="text-center p-4" id="footer-text">
               © 2023 Copyright:Bootsrap Example
             </div>
