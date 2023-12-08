@@ -1,21 +1,28 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> editing-phase
 #offcanvasExample{
     width: 240px;
     margin-top: 56px;
     overflow-x: hidden;
 }
+.sidebar {
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .shifted {
+    margin-left: 240px; 
+    transition: margin-left 0.5s;
+  }
 @media (max-width:992px) {
-    #toggleSidebar{
+    #sidebarToggle{
         display: none;
     }
     #offcanvasExample{
-        display: none;
-    }
-    #main{
-        transition: margin-left 0.3s; 
-    }
-    #main.shifted{
-        margin-left: none;
+        display:none;
     }
 
 }
@@ -60,4 +67,8 @@ main.shifted{
     font-weight:bold ;
     font-size: medium;
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> editing-phase
