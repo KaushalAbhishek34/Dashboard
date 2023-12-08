@@ -1,23 +1,23 @@
-
-
 #offcanvasExample{
     width: 240px;
     margin-top: 56px;
     overflow-x: hidden;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
 }
+.sidebar {
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .shifted {
+    margin-left: 240px; 
+    transition: margin-left 0.5s;
+  }
 @media (max-width:992px) {
-    #toggleSidebar{
-        display: none;
-    }
-    #offcanvasExample{
-        display: none;
-    }
     #sidebarToggle{
         display: none;
     }
+
 }
 
 #canvas-heading{
@@ -61,4 +61,3 @@ main.shifted{
     font-size: medium;
 
 }
-

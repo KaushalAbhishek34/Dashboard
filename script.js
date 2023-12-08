@@ -1,23 +1,21 @@
-    
-    // toggle button functionality
-    document.addEventListener('DOMContentLoaded', function () {
-      const toggleBtn = document.getElementById('toggle-btn');
-      const sidebar = document.getElementById('sidebar');
-    
-      toggleBtn.addEventListener('click', function () {
-        sidebar.classList.toggle('open');
-      });
-    
-      // Open sidebar by default on large screens
-      if (window.innerWidth >= 993) {
-        sidebar.classList.add('open');
-      }
-    });
+function toggleMainContent() {
+  $('main').toggleClass('shifted');
+}
+$(document).ready(function () {
+  // Open sidebar by default on large screens
+  if (window.innerWidth >= 768) {
+    $('.sidebar').addClass('show'); // Use Bootstrap's show class to open the sidebar
+    toggleMainContent(); // Apply the main content toggle function
+  }
 
-    
-    
-    // Data table
-    
-    new DataTable('#example');
-    
+  // Toggle sidebar on button click
+  $('#sidebarToggle').click(function () {
+    $('.sidebar').toggleClass('show');
+    toggleMainContent(); // Apply the main content toggle function
+  });
+});
+
+
+new DataTable('#example');
+
 
