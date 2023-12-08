@@ -3,9 +3,9 @@ function toggleMainContent() {
 }
 $(document).ready(function () {
   // Open sidebar by default on large screens
-  if (window.innerWidth >= 768) {
-    $('.sidebar').addClass('show'); // Use Bootstrap's show class to open the sidebar
-    toggleMainContent(); // Apply the main content toggle function
+  if (window.innerWidth >= 992) {
+    $('.sidebar').addClass('show'); 
+    toggleMainContent(); 
   }
 
   // Toggle sidebar on button click

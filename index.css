@@ -17,6 +17,9 @@
     #sidebarToggle{
         display: none;
     }
+    #offcanvasExample{
+        display:none;
+    }
 
 }
 
