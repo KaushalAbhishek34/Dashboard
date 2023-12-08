@@ -1,12 +1,8 @@
 
-
 #offcanvasExample{
     width: 240px;
     margin-top: 56px;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 @media (max-width:992px) {
     #toggleSidebar{
@@ -65,4 +61,3 @@ main.shifted{
     font-size: medium;
 
 }
-

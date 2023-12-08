@@ -1,6 +1,5 @@
-    function toggleMainContent() {
-      $('main').toggleClass('shifted');
-    }
-    new DataTable('#example');
-    
+function toggleMainContent() {
+  $('main').toggleClass('shifted');
+}
 
+new DataTable('#example');
