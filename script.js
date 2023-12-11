@@ -26,22 +26,14 @@ async function getData(){
 
   let tab='';
   data.forEach(user => {
-    
-        var userId = user.id;
-        var firstName = user.name.firstname;
-        var lastName = user.name.lastname;
-        var email = user.email;
-        var username = user.username;
-        var password = user.password;
-        var phone = user.phone;
         tab +=`<tr>
-           <td>${userId}</td>
-           <td>${firstName}</td>
-           <td>${lastName}</td>
-           <td>${email}</td>
-           <td>${username}</td>
-           <td>${password}</td>
-           <td>${phone}</td>
+           <td>${user.id}</td>
+           <td>${user.name.firstname}</td>
+           <td>${user.name.lastname}</td>
+           <td>${user.email}</td>
+           <td>${user.username}</td>
+           <td>${user.password}</td>
+           <td>${user.phone}</td>
          </tr>`
     });
     document.getElementById('tbody').innerHTML = tab;
