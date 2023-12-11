@@ -11,67 +11,47 @@ $(function () {
 });
 
 // for table example
-new DataTable('#example');
-// new DataTable('#userTable')
+$('#example').DataTable();
+
+
+
 
 
 
 // for user table
 
+async function getData(){
+  const records = await fetch('https://fakestoreapi.com/users')
+  const data = await records.json();
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Function to fetch user data from the API
-  async function fetchUserData() {
-      try {
-          const response = await fetch("https://fakestoreapi.com/users");
-          const data = await response.json();
-          return data;
-      } catch (error) {
-          console.error("Error fetching user data:", error);
-          return [];
-      }
-  }
+  let tab='';
+  data.forEach(user => {
+    
+        var userId = user.id;
+        var firstName = user.name.firstname;
+        var lastName = user.name.lastname;
+        var email = user.email;
+        var username = user.username;
+        var password = user.password;
+        var phone = user.phone;
+        tab +=`<tr>
+           <td>${userId}</td>
+           <td>${firstName}</td>
+           <td>${lastName}</td>
+           <td>${email}</td>
+           <td>${username}</td>
+           <td>${password}</td>
+           <td>${phone}</td>
+         </tr>`
+    });
+    document.getElementById('tbody').innerHTML = tab;
 
-  // Function to generate HTML table from data
-  function generateTable(data) {
-      var tbody = document.getElementById('tbody');
 
-      // Clear existing content in tbody
-      tbody.innerHTML = '';
+  $('#userTable').DataTable({
+    "lengthMenu": [3,5,10],
+    "pageLength": 3
+  })  
+}
 
-      // Populate the table with data
-      data.forEach(function (user) {
-          var row = tbody.insertRow();
 
-          // Extract relevant data from the user object
-          var userId = user.id;
-          var firstName = user.name.firstname;
-          var lastName = user.name.lastname;
-          var email = user.email;
-          var username = user.username;
-          var password = user.password;
-          var phone = user.phone;
 
-          // Create cells in the row
-          var cellId = row.insertCell();
-          var cellFirstName = row.insertCell();
-          var cellLastName = row.insertCell();
-          var cellEmail = row.insertCell();
-          var cellUsername = row.insertCell();
-          var cellPassword = row.insertCell();
-          var cellPhone = row.insertCell();
-
-          // Add data to cells
-          cellId.textContent = userId;
-          cellFirstName.textContent = firstName;
-          cellLastName.textContent = lastName;
-          cellEmail.textContent = email;
-          cellUsername.textContent = username;
-          cellPassword.textContent = password;
-          cellPhone.textContent = phone;
-      });
-  }
-
-  // Fetch user data and generate the table
-  fetchUserData().then(generateTable);
-});
